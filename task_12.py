@@ -4,11 +4,10 @@
 # Он называет сумму этих чисел S и их произведение P. Помогите Кате отгадать
 # задуманные Петей числа.
 
-x = int(input('Введите число Х: '))
-y = int(input('Введите число Y:'))
-s = x + y
-p = x * y
-for i in range(x):
-    for j in range(y):
-        if x == s and y == p:
+s = int(input('Введите cумму S: '))
+p = int(input('Введите произведение P:'))
+
+for i in range(s):
+    for j in range(p):
+        if s == i+j and p == i*j:
             print(i, j)
